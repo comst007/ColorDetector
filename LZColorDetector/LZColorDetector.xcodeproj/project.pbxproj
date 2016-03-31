@@ -7,14 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CBF4852A1CACBD950029B466 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF485291CACBD950029B466 /* main.m */; };
-		CBF4852D1CACBD950029B466 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF4852C1CACBD950029B466 /* AppDelegate.m */; };
-		CBF485301CACBD950029B466 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF4852F1CACBD950029B466 /* ViewController.m */; };
-		CBF485331CACBD950029B466 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBF485311CACBD950029B466 /* Main.storyboard */; };
-		CBF485351CACBD950029B466 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBF485341CACBD950029B466 /* Assets.xcassets */; };
-		CBF485381CACBD950029B466 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBF485361CACBD950029B466 /* LaunchScreen.storyboard */; };
 		CBF485431CACBD950029B466 /* LZColorDetectorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF485421CACBD950029B466 /* LZColorDetectorTests.m */; };
 		CBF4854E1CACBD950029B466 /* LZColorDetectorUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF4854D1CACBD950029B466 /* LZColorDetectorUITests.m */; };
+		CBF485741CACBE990029B466 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF4855E1CACBE990029B466 /* AppDelegate.m */; };
+		CBF485751CACBE990029B466 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF485611CACBE990029B466 /* ViewController.m */; };
+		CBF485761CACBE990029B466 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBF4856B1CACBE990029B466 /* Assets.xcassets */; };
+		CBF485771CACBE990029B466 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBF4856D1CACBE990029B466 /* LaunchScreen.storyboard */; };
+		CBF485781CACBE990029B466 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBF4856F1CACBE990029B466 /* Main.storyboard */; };
+		CBF485791CACBE990029B466 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CBF485721CACBE990029B466 /* Info.plist */; };
+		CBF4857A1CACBE990029B466 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF485731CACBE990029B466 /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,21 +37,21 @@
 
 /* Begin PBXFileReference section */
 		CBF485251CACBD950029B466 /* LZColorDetector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LZColorDetector.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		CBF485291CACBD950029B466 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		CBF4852B1CACBD950029B466 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		CBF4852C1CACBD950029B466 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		CBF4852E1CACBD950029B466 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		CBF4852F1CACBD950029B466 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		CBF485321CACBD950029B466 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CBF485341CACBD950029B466 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CBF485371CACBD950029B466 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		CBF485391CACBD950029B466 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CBF4853E1CACBD950029B466 /* LZColorDetectorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LZColorDetectorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBF485421CACBD950029B466 /* LZColorDetectorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LZColorDetectorTests.m; sourceTree = "<group>"; };
 		CBF485441CACBD950029B466 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CBF485491CACBD950029B466 /* LZColorDetectorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LZColorDetectorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBF4854D1CACBD950029B466 /* LZColorDetectorUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LZColorDetectorUITests.m; sourceTree = "<group>"; };
 		CBF4854F1CACBD950029B466 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBF4855D1CACBE990029B466 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CBF4855E1CACBE990029B466 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CBF485601CACBE990029B466 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CBF485611CACBE990029B466 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CBF4856B1CACBE990029B466 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CBF4856E1CACBE990029B466 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CBF485701CACBE990029B466 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CBF485721CACBE990029B466 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBF485731CACBE990029B466 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,25 +102,11 @@
 		CBF485271CACBD950029B466 /* LZColorDetector */ = {
 			isa = PBXGroup;
 			children = (
-				CBF4852B1CACBD950029B466 /* AppDelegate.h */,
-				CBF4852C1CACBD950029B466 /* AppDelegate.m */,
-				CBF4852E1CACBD950029B466 /* ViewController.h */,
-				CBF4852F1CACBD950029B466 /* ViewController.m */,
-				CBF485311CACBD950029B466 /* Main.storyboard */,
-				CBF485341CACBD950029B466 /* Assets.xcassets */,
-				CBF485361CACBD950029B466 /* LaunchScreen.storyboard */,
-				CBF485391CACBD950029B466 /* Info.plist */,
-				CBF485281CACBD950029B466 /* Supporting Files */,
+				CBF4855B1CACBE990029B466 /* Classes */,
+				CBF485691CACBE990029B466 /* Resources */,
+				CBF485711CACBE990029B466 /* Surpporting */,
 			);
 			path = LZColorDetector;
-			sourceTree = "<group>";
-		};
-		CBF485281CACBD950029B466 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				CBF485291CACBD950029B466 /* main.m */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		CBF485411CACBD950029B466 /* LZColorDetectorTests */ = {
@@ -138,6 +125,124 @@
 				CBF4854F1CACBD950029B466 /* Info.plist */,
 			);
 			path = LZColorDetectorUITests;
+			sourceTree = "<group>";
+		};
+		CBF4855B1CACBE990029B466 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				CBF4855C1CACBE990029B466 /* AppDelegate */,
+				CBF4855F1CACBE990029B466 /* Controllers */,
+				CBF485621CACBE990029B466 /* Globals */,
+				CBF485631CACBE990029B466 /* Models */,
+				CBF485641CACBE990029B466 /* Parsers */,
+				CBF485651CACBE990029B466 /* Publics */,
+				CBF485661CACBE990029B466 /* Request */,
+				CBF485671CACBE990029B466 /* Utilities */,
+				CBF485681CACBE990029B466 /* Views */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		CBF4855C1CACBE990029B466 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				CBF4855D1CACBE990029B466 /* AppDelegate.h */,
+				CBF4855E1CACBE990029B466 /* AppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		CBF4855F1CACBE990029B466 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CBF485601CACBE990029B466 /* ViewController.h */,
+				CBF485611CACBE990029B466 /* ViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CBF485621CACBE990029B466 /* Globals */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Globals;
+			sourceTree = "<group>";
+		};
+		CBF485631CACBE990029B466 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CBF485641CACBE990029B466 /* Parsers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Parsers;
+			sourceTree = "<group>";
+		};
+		CBF485651CACBE990029B466 /* Publics */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Publics;
+			sourceTree = "<group>";
+		};
+		CBF485661CACBE990029B466 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		CBF485671CACBE990029B466 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		CBF485681CACBE990029B466 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CBF485691CACBE990029B466 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CBF4856A1CACBE990029B466 /* images */,
+				CBF4856C1CACBE990029B466 /* xibs */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CBF4856A1CACBE990029B466 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				CBF4856B1CACBE990029B466 /* Assets.xcassets */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		CBF4856C1CACBE990029B466 /* xibs */ = {
+			isa = PBXGroup;
+			children = (
+				CBF4856D1CACBE990029B466 /* LaunchScreen.storyboard */,
+				CBF4856F1CACBE990029B466 /* Main.storyboard */,
+			);
+			path = xibs;
+			sourceTree = "<group>";
+		};
+		CBF485711CACBE990029B466 /* Surpporting */ = {
+			isa = PBXGroup;
+			children = (
+				CBF485721CACBE990029B466 /* Info.plist */,
+				CBF485731CACBE990029B466 /* main.m */,
+			);
+			path = Surpporting;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,9 +348,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBF485381CACBD950029B466 /* LaunchScreen.storyboard in Resources */,
-				CBF485351CACBD950029B466 /* Assets.xcassets in Resources */,
-				CBF485331CACBD950029B466 /* Main.storyboard in Resources */,
+				CBF485791CACBE990029B466 /* Info.plist in Resources */,
+				CBF485781CACBE990029B466 /* Main.storyboard in Resources */,
+				CBF485761CACBE990029B466 /* Assets.xcassets in Resources */,
+				CBF485771CACBE990029B466 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,9 +376,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBF485301CACBD950029B466 /* ViewController.m in Sources */,
-				CBF4852D1CACBD950029B466 /* AppDelegate.m in Sources */,
-				CBF4852A1CACBD950029B466 /* main.m in Sources */,
+				CBF485751CACBE990029B466 /* ViewController.m in Sources */,
+				CBF4857A1CACBE990029B466 /* main.m in Sources */,
+				CBF485741CACBE990029B466 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,20 +414,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		CBF485311CACBD950029B466 /* Main.storyboard */ = {
+		CBF4856D1CACBE990029B466 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CBF485321CACBD950029B466 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		CBF485361CACBD950029B466 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CBF485371CACBD950029B466 /* Base */,
+				CBF4856E1CACBE990029B466 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		CBF4856F1CACBE990029B466 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CBF485701CACBE990029B466 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -411,7 +517,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = LZColorDetector/Info.plist;
+				INFOPLIST_FILE = LZColorDetector/Surpporting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.comst1314.LZColorDetector;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -422,7 +528,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = LZColorDetector/Info.plist;
+				INFOPLIST_FILE = LZColorDetector/Surpporting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.comst1314.LZColorDetector;
 				PRODUCT_NAME = "$(TARGET_NAME)";
