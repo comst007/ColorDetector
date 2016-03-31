@@ -7,15 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB0908691CADC47400835211 /* UIImageView+LZColor.m in Sources */ = {isa = PBXBuildFile; fileRef = CB0908681CADC47400835211 /* UIImageView+LZColor.m */; };
+		CB19794E1CADC85A0015B394 /* NSString+LZColor.m in Sources */ = {isa = PBXBuildFile; fileRef = CB19794D1CADC85A0015B394 /* NSString+LZColor.m */; };
+		CB1979511CADD5E50015B394 /* UIColor+LZColor.m in Sources */ = {isa = PBXBuildFile; fileRef = CB1979501CADD5E50015B394 /* UIColor+LZColor.m */; };
+		CBEA0AE91CACE1320008141F /* UIView+LZFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = CBEA0AE81CACE1320008141F /* UIView+LZFrame.m */; };
+		CBEA0AF31CACE3360008141F /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = CBEA0AEC1CACE3360008141F /* SVIndefiniteAnimatedView.m */; };
+		CBEA0AF41CACE3360008141F /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CBEA0AEE1CACE3360008141F /* SVProgressHUD.bundle */; };
+		CBEA0AF51CACE3360008141F /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = CBEA0AF01CACE3360008141F /* SVProgressHUD.m */; };
+		CBEA0AF61CACE3360008141F /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = CBEA0AF21CACE3360008141F /* SVRadialGradientLayer.m */; };
+		CBEA0AF91CACEF4B0008141F /* LZPickerColorController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBEA0AF81CACEF4B0008141F /* LZPickerColorController.m */; };
+		CBEA0AFB1CACF00D0008141F /* LZPickerColorController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBEA0AFA1CACF00D0008141F /* LZPickerColorController.xib */; };
 		CBF485431CACBD950029B466 /* LZColorDetectorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF485421CACBD950029B466 /* LZColorDetectorTests.m */; };
 		CBF4854E1CACBD950029B466 /* LZColorDetectorUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF4854D1CACBD950029B466 /* LZColorDetectorUITests.m */; };
 		CBF485741CACBE990029B466 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF4855E1CACBE990029B466 /* AppDelegate.m */; };
 		CBF485751CACBE990029B466 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF485611CACBE990029B466 /* ViewController.m */; };
 		CBF485761CACBE990029B466 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBF4856B1CACBE990029B466 /* Assets.xcassets */; };
-		CBF485771CACBE990029B466 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBF4856D1CACBE990029B466 /* LaunchScreen.storyboard */; };
-		CBF485781CACBE990029B466 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBF4856F1CACBE990029B466 /* Main.storyboard */; };
 		CBF485791CACBE990029B466 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CBF485721CACBE990029B466 /* Info.plist */; };
 		CBF4857A1CACBE990029B466 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF485731CACBE990029B466 /* main.m */; };
+		CBF4857C1CACC92C0029B466 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBF4857B1CACC92C0029B466 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +45,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CB0908671CADC47400835211 /* UIImageView+LZColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+LZColor.h"; sourceTree = "<group>"; };
+		CB0908681CADC47400835211 /* UIImageView+LZColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+LZColor.m"; sourceTree = "<group>"; };
+		CB19794C1CADC85A0015B394 /* NSString+LZColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+LZColor.h"; sourceTree = "<group>"; };
+		CB19794D1CADC85A0015B394 /* NSString+LZColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+LZColor.m"; sourceTree = "<group>"; };
+		CB19794F1CADD5E50015B394 /* UIColor+LZColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+LZColor.h"; sourceTree = "<group>"; };
+		CB1979501CADD5E50015B394 /* UIColor+LZColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+LZColor.m"; sourceTree = "<group>"; };
+		CBEA0AE71CACE1320008141F /* UIView+LZFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LZFrame.h"; sourceTree = "<group>"; };
+		CBEA0AE81CACE1320008141F /* UIView+LZFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LZFrame.m"; sourceTree = "<group>"; };
+		CBEA0AEB1CACE3360008141F /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		CBEA0AEC1CACE3360008141F /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		CBEA0AED1CACE3360008141F /* SVProgressHUD-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-Prefix.pch"; sourceTree = "<group>"; };
+		CBEA0AEE1CACE3360008141F /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		CBEA0AEF1CACE3360008141F /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		CBEA0AF01CACE3360008141F /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		CBEA0AF11CACE3360008141F /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVRadialGradientLayer.h; sourceTree = "<group>"; };
+		CBEA0AF21CACE3360008141F /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVRadialGradientLayer.m; sourceTree = "<group>"; };
+		CBEA0AF71CACEF4B0008141F /* LZPickerColorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZPickerColorController.h; sourceTree = "<group>"; };
+		CBEA0AF81CACEF4B0008141F /* LZPickerColorController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZPickerColorController.m; sourceTree = "<group>"; };
+		CBEA0AFA1CACF00D0008141F /* LZPickerColorController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LZPickerColorController.xib; sourceTree = "<group>"; };
 		CBF485251CACBD950029B466 /* LZColorDetector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LZColorDetector.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBF4853E1CACBD950029B466 /* LZColorDetectorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LZColorDetectorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBF485421CACBD950029B466 /* LZColorDetectorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LZColorDetectorTests.m; sourceTree = "<group>"; };
@@ -48,10 +76,9 @@
 		CBF485601CACBE990029B466 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		CBF485611CACBE990029B466 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		CBF4856B1CACBE990029B466 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CBF4856E1CACBE990029B466 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		CBF485701CACBE990029B466 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CBF485721CACBE990029B466 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CBF485731CACBE990029B466 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CBF4857B1CACC92C0029B466 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +106,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CBEA0AEA1CACE3360008141F /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				CBEA0AEB1CACE3360008141F /* SVIndefiniteAnimatedView.h */,
+				CBEA0AEC1CACE3360008141F /* SVIndefiniteAnimatedView.m */,
+				CBEA0AED1CACE3360008141F /* SVProgressHUD-Prefix.pch */,
+				CBEA0AEE1CACE3360008141F /* SVProgressHUD.bundle */,
+				CBEA0AEF1CACE3360008141F /* SVProgressHUD.h */,
+				CBEA0AF01CACE3360008141F /* SVProgressHUD.m */,
+				CBEA0AF11CACE3360008141F /* SVRadialGradientLayer.h */,
+				CBEA0AF21CACE3360008141F /* SVRadialGradientLayer.m */,
+			);
+			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
 		CBF4851C1CACBD950029B466 = {
 			isa = PBXGroup;
 			children = (
@@ -157,6 +199,8 @@
 			children = (
 				CBF485601CACBE990029B466 /* ViewController.h */,
 				CBF485611CACBE990029B466 /* ViewController.m */,
+				CBEA0AF71CACEF4B0008141F /* LZPickerColorController.h */,
+				CBEA0AF81CACEF4B0008141F /* LZPickerColorController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -185,6 +229,7 @@
 		CBF485651CACBE990029B466 /* Publics */ = {
 			isa = PBXGroup;
 			children = (
+				CBEA0AEA1CACE3360008141F /* SVProgressHUD */,
 			);
 			path = Publics;
 			sourceTree = "<group>";
@@ -199,6 +244,14 @@
 		CBF485671CACBE990029B466 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				CBEA0AE71CACE1320008141F /* UIView+LZFrame.h */,
+				CBEA0AE81CACE1320008141F /* UIView+LZFrame.m */,
+				CB0908671CADC47400835211 /* UIImageView+LZColor.h */,
+				CB0908681CADC47400835211 /* UIImageView+LZColor.m */,
+				CB19794C1CADC85A0015B394 /* NSString+LZColor.h */,
+				CB19794D1CADC85A0015B394 /* NSString+LZColor.m */,
+				CB19794F1CADD5E50015B394 /* UIColor+LZColor.h */,
+				CB1979501CADD5E50015B394 /* UIColor+LZColor.m */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -230,8 +283,8 @@
 		CBF4856C1CACBE990029B466 /* xibs */ = {
 			isa = PBXGroup;
 			children = (
-				CBF4856D1CACBE990029B466 /* LaunchScreen.storyboard */,
-				CBF4856F1CACBE990029B466 /* Main.storyboard */,
+				CBF4857B1CACC92C0029B466 /* Main.storyboard */,
+				CBEA0AFA1CACF00D0008141F /* LZPickerColorController.xib */,
 			);
 			path = xibs;
 			sourceTree = "<group>";
@@ -312,6 +365,15 @@
 				TargetAttributes = {
 					CBF485241CACBD950029B466 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 6RLR7J2EXS;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+							com.apple.Push = {
+								enabled = 0;
+							};
+						};
 					};
 					CBF4853D1CACBD950029B466 = {
 						CreatedOnToolsVersion = 7.2;
@@ -349,9 +411,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBF485791CACBE990029B466 /* Info.plist in Resources */,
-				CBF485781CACBE990029B466 /* Main.storyboard in Resources */,
+				CBF4857C1CACC92C0029B466 /* Main.storyboard in Resources */,
 				CBF485761CACBE990029B466 /* Assets.xcassets in Resources */,
-				CBF485771CACBE990029B466 /* LaunchScreen.storyboard in Resources */,
+				CBEA0AFB1CACF00D0008141F /* LZPickerColorController.xib in Resources */,
+				CBEA0AF41CACE3360008141F /* SVProgressHUD.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,9 +439,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBEA0AF61CACE3360008141F /* SVRadialGradientLayer.m in Sources */,
+				CB0908691CADC47400835211 /* UIImageView+LZColor.m in Sources */,
+				CBEA0AF31CACE3360008141F /* SVIndefiniteAnimatedView.m in Sources */,
+				CBEA0AE91CACE1320008141F /* UIView+LZFrame.m in Sources */,
+				CBEA0AF91CACEF4B0008141F /* LZPickerColorController.m in Sources */,
 				CBF485751CACBE990029B466 /* ViewController.m in Sources */,
 				CBF4857A1CACBE990029B466 /* main.m in Sources */,
+				CB19794E1CADC85A0015B394 /* NSString+LZColor.m in Sources */,
+				CB1979511CADD5E50015B394 /* UIColor+LZColor.m in Sources */,
 				CBF485741CACBE990029B466 /* AppDelegate.m in Sources */,
+				CBEA0AF51CACE3360008141F /* SVProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,25 +484,6 @@
 		};
 /* End PBXTargetDependency section */
 
-/* Begin PBXVariantGroup section */
-		CBF4856D1CACBE990029B466 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CBF4856E1CACBE990029B466 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		CBF4856F1CACBE990029B466 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CBF485701CACBE990029B466 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
 		CBF485501CACBD950029B466 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -450,7 +502,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Zhao Liu (6CXU4P7XB5)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Zhao Liu (6CXU4P7XB5)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -472,6 +525,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -493,7 +547,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Zhao Liu (6CXU4P7XB5)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Zhao Liu (6CXU4P7XB5)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -508,6 +563,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -517,10 +573,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Zhao Liu (6CXU4P7XB5)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Zhao Liu (6CXU4P7XB5)";
 				INFOPLIST_FILE = LZColorDetector/Surpporting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.comst1314.LZColorDetector;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -528,10 +587,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Zhao Liu (6CXU4P7XB5)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Zhao Liu (6CXU4P7XB5)";
 				INFOPLIST_FILE = LZColorDetector/Surpporting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.comst1314.LZColorDetector;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -602,6 +664,7 @@
 				CBF485541CACBD950029B466 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CBF485551CACBD950029B466 /* Build configuration list for PBXNativeTarget "LZColorDetectorTests" */ = {
 			isa = XCConfigurationList;
@@ -610,6 +673,7 @@
 				CBF485571CACBD950029B466 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CBF485581CACBD950029B466 /* Build configuration list for PBXNativeTarget "LZColorDetectorUITests" */ = {
 			isa = XCConfigurationList;
@@ -618,6 +682,7 @@
 				CBF4855A1CACBD950029B466 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

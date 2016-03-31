@@ -7,6 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "NSString+LZColor.h"
 
 @interface LZColorDetectorTests : XCTestCase
 
@@ -27,6 +28,7 @@
 - (void)testExample {
     // This is an example of a functional test case.
     // Use XCTAssert and related functions to verify your tests produce the correct results.
+   
 }
 
 - (void)testPerformanceExample {
