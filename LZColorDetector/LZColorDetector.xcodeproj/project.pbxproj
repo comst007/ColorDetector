@@ -10,6 +10,9 @@
 		CB0908691CADC47400835211 /* UIImageView+LZColor.m in Sources */ = {isa = PBXBuildFile; fileRef = CB0908681CADC47400835211 /* UIImageView+LZColor.m */; };
 		CB19794E1CADC85A0015B394 /* NSString+LZColor.m in Sources */ = {isa = PBXBuildFile; fileRef = CB19794D1CADC85A0015B394 /* NSString+LZColor.m */; };
 		CB1979511CADD5E50015B394 /* UIColor+LZColor.m in Sources */ = {isa = PBXBuildFile; fileRef = CB1979501CADD5E50015B394 /* UIColor+LZColor.m */; };
+		CB1979571CADE2DE0015B394 /* LZColorStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = CB1979561CADE2DE0015B394 /* LZColorStorage.m */; };
+		CB19795B1CADE83C0015B394 /* LZColorCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CB1979591CADE83C0015B394 /* LZColorCell.m */; };
+		CB19795C1CADE83C0015B394 /* LZColorCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB19795A1CADE83C0015B394 /* LZColorCell.xib */; };
 		CBEA0AE91CACE1320008141F /* UIView+LZFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = CBEA0AE81CACE1320008141F /* UIView+LZFrame.m */; };
 		CBEA0AF31CACE3360008141F /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = CBEA0AEC1CACE3360008141F /* SVIndefiniteAnimatedView.m */; };
 		CBEA0AF41CACE3360008141F /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CBEA0AEE1CACE3360008141F /* SVProgressHUD.bundle */; };
@@ -51,6 +54,11 @@
 		CB19794D1CADC85A0015B394 /* NSString+LZColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+LZColor.m"; sourceTree = "<group>"; };
 		CB19794F1CADD5E50015B394 /* UIColor+LZColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+LZColor.h"; sourceTree = "<group>"; };
 		CB1979501CADD5E50015B394 /* UIColor+LZColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+LZColor.m"; sourceTree = "<group>"; };
+		CB1979551CADE2DE0015B394 /* LZColorStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZColorStorage.h; sourceTree = "<group>"; };
+		CB1979561CADE2DE0015B394 /* LZColorStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZColorStorage.m; sourceTree = "<group>"; };
+		CB1979581CADE83C0015B394 /* LZColorCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZColorCell.h; sourceTree = "<group>"; };
+		CB1979591CADE83C0015B394 /* LZColorCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZColorCell.m; sourceTree = "<group>"; };
+		CB19795A1CADE83C0015B394 /* LZColorCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LZColorCell.xib; sourceTree = "<group>"; };
 		CBEA0AE71CACE1320008141F /* UIView+LZFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LZFrame.h"; sourceTree = "<group>"; };
 		CBEA0AE81CACE1320008141F /* UIView+LZFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LZFrame.m"; sourceTree = "<group>"; };
 		CBEA0AEB1CACE3360008141F /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
@@ -208,6 +216,8 @@
 		CBF485621CACBE990029B466 /* Globals */ = {
 			isa = PBXGroup;
 			children = (
+				CB1979551CADE2DE0015B394 /* LZColorStorage.h */,
+				CB1979561CADE2DE0015B394 /* LZColorStorage.m */,
 			);
 			path = Globals;
 			sourceTree = "<group>";
@@ -259,6 +269,9 @@
 		CBF485681CACBE990029B466 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				CB1979581CADE83C0015B394 /* LZColorCell.h */,
+				CB1979591CADE83C0015B394 /* LZColorCell.m */,
+				CB19795A1CADE83C0015B394 /* LZColorCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -415,6 +428,7 @@
 				CBF485761CACBE990029B466 /* Assets.xcassets in Resources */,
 				CBEA0AFB1CACF00D0008141F /* LZPickerColorController.xib in Resources */,
 				CBEA0AF41CACE3360008141F /* SVProgressHUD.bundle in Resources */,
+				CB19795C1CADE83C0015B394 /* LZColorCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,10 +454,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBEA0AF61CACE3360008141F /* SVRadialGradientLayer.m in Sources */,
+				CB1979571CADE2DE0015B394 /* LZColorStorage.m in Sources */,
 				CB0908691CADC47400835211 /* UIImageView+LZColor.m in Sources */,
 				CBEA0AF31CACE3360008141F /* SVIndefiniteAnimatedView.m in Sources */,
 				CBEA0AE91CACE1320008141F /* UIView+LZFrame.m in Sources */,
 				CBEA0AF91CACEF4B0008141F /* LZPickerColorController.m in Sources */,
+				CB19795B1CADE83C0015B394 /* LZColorCell.m in Sources */,
 				CBF485751CACBE990029B466 /* ViewController.m in Sources */,
 				CBF4857A1CACBE990029B466 /* main.m in Sources */,
 				CB19794E1CADC85A0015B394 /* NSString+LZColor.m in Sources */,

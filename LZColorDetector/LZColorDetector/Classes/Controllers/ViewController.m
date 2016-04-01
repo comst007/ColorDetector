@@ -10,11 +10,14 @@
 #import "UIView+LZFrame.h"
 #import "SVProgressHUD.h"
 #import "LZPickerColorController.h"
+#import "LZColorCell.h"
+#import "LZColorStorage.h"
 
 
-@interface ViewController ()<UINavigationControllerDelegate,UIImagePickerControllerDelegate>
+@interface ViewController ()<UINavigationControllerDelegate,UIImagePickerControllerDelegate, UITableViewDelegate, UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *containerLeading;
 @property (nonatomic, strong) UIImagePickerController *imagePickerVC;
+@property (weak, nonatomic) IBOutlet UITableView *colorHistoryTableView;
 
 @end
 
@@ -23,9 +26,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    [self configColorHistoryTableView];
     
 }
 
+- (void)configColorHistoryTableView{
+    self.colorHistoryTableView.delegate = self;
+    self.colorHistoryTableView.dataSource = self;
+    [self.colorHistoryTableView registerNib:[UINib nibWithNibName:NSStringFromClass([LZColorCell class]) bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"LZColorCell"];
+    self.colorHistoryTableView.rowHeight = 100;
+    self.colorHistoryTableView.tableFooterView = [[UIView alloc] init];
+}
 
 
 #pragma mark - new or history
@@ -34,7 +45,13 @@
      self.containerLeading.constant = - self.view.width;
     
     [UIView animateWithDuration:0.25 animations:^{
+        
         [self.view layoutIfNeeded];
+        
+    } completion:^(BOOL finished) {
+        
+        [self.colorHistoryTableView reloadData];
+        
     }];
 }
 - (IBAction)nButtonClick:(UIButton *)sender {
@@ -122,6 +139,25 @@
         _imagePickerVC.delegate = self ;
     }
     return _imagePickerVC;
+}
+
+#pragma mark - historytableview delegate 
+
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return [[[LZColorStorage sharedColorStorage] allColors] count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    LZColorCell *cell = [tableView dequeueReusableCellWithIdentifier:@"LZColorCell"];
+    cell.currentColor = [[LZColorStorage sharedColorStorage] allColors][indexPath.row];
+    
+    return cell;
 }
 
 @end

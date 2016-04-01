@@ -12,5 +12,6 @@
 @property (nonatomic, assign) NSInteger redComponent;
 @property (nonatomic, assign) NSInteger greenComponent;
 @property (nonatomic, assign) NSInteger blueComponent;
+@property (nonatomic, copy) NSString *hexString;
 + (UIColor *)lz_colorWithRed:(NSInteger)red green:(NSInteger)green blue:(NSInteger)blue alpha:(NSInteger)alpha;
 @end

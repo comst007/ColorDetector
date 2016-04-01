@@ -133,6 +133,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Color Detector" id="gJU-Si-ttK"/>
                     <connections>
+                        <outlet property="colorHistoryTableView" destination="5r2-g8-ZRp" id="Yue-Lz-V5h"/>
                         <outlet property="containerLeading" destination="iAN-HC-9K8" id="ARP-vF-oHD"/>
                     </connections>
                 </viewController>

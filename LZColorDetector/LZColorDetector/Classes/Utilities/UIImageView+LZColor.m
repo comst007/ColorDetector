@@ -25,7 +25,7 @@
     [self.layer renderInContext:bitmapCtx];
     
     NSString *hexString = [NSString stringWithFormat:@"%02x%02x%02x%02x", dataString[0], dataString[1], dataString[2], dataString[3]];
-    NSLog(@"hex: %@", hexString);
+   // NSLog(@"hex: %@", hexString);
     CGColorSpaceRelease(rgbSpace);
     CGContextRelease(bitmapCtx);
     

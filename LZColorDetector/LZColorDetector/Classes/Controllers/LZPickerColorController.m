@@ -11,6 +11,9 @@
 #import "UIImageView+LZColor.h"
 #import "NSString+LZColor.h"
 #import "UIColor+LZColor.h"
+#import "LZColorStorage.h"
+#import "SVProgressHUD.h"
+#import "LZColorCell.h"
 
 @interface LZPickerColorController ()<UIScrollViewDelegate>
 @property (weak, nonatomic) IBOutlet UIScrollView *containerScrollView;
@@ -18,6 +21,10 @@
 
 @property (weak, nonatomic) IBOutlet UISlider *scaleSlider;
 @property (weak, nonatomic) IBOutlet UIView *bottomContainerView;
+
+@property (nonatomic, strong) UIColor *selectedColor;
+
+@property (nonatomic, strong) LZColorCell *colorCellView;
 
 @end
 
@@ -34,6 +41,13 @@
     self.imageView.width = self.containerScrollView.width - 2 * 20;
     self.imageView.height = self.imageView.width * self.selectedImage.size.height / self.selectedImage.size.width;
     [self updateScrollViewContentSize];
+    
+    CGFloat colorCellViewPading = 10 ;
+    self.colorCellView.x = colorCellViewPading;
+    self.colorCellView.y = colorCellViewPading;
+    self.colorCellView.height = self.bottomContainerView.height - 2 * colorCellViewPading;
+    self.colorCellView.width = self.bottomContainerView.width - 2 * colorCellViewPading;
+    
 }
 
 
@@ -83,13 +97,14 @@
 - (void)tapAction:(UIGestureRecognizer *)tapGesture{
     
     CGPoint postion = [tapGesture locationInView:self.imageView];
-    NSLog(@"touch : %@", NSStringFromCGPoint(postion));
+    //NSLog(@"touch : %@", NSStringFromCGPoint(postion));
     NSString *hexString = [self.imageView hexColorStringInPosition:postion];
     UIColor *color = [hexString colorFromHextString];
     
-    self.bottomContainerView.backgroundColor = color;
+    self.colorCellView.currentColor = color;
     
-    NSLog(@"rgb: %li, %li, %li", color.redComponent, color.greenComponent, color.blueComponent);
+    self.selectedColor = color;
+   
 }
 
 #pragma mark - slider change
@@ -108,6 +123,9 @@
 
 - (void)saveAction{
     
+    [[LZColorStorage sharedColorStorage] addColor:self.selectedColor];
+    [SVProgressHUD showSuccessWithStatus:@"保存成功"];
+    
 }
 
 
@@ -121,7 +139,16 @@
     self.scaleSlider.value = scrollView.zoomScale;
 }
 
-#pragma mark - touch 
+#pragma mark - tlazyload
+
+- (LZColorCell *)colorCellView{
+    if (!_colorCellView) {
+        _colorCellView = [LZColorCell colorCell];
+        _colorCellView.backgroundColor = [UIColor clearColor];
+        [self.bottomContainerView addSubview:_colorCellView];
+    }
+    return _colorCellView;
+}
 
 
 @end
