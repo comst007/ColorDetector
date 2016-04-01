@@ -15,6 +15,8 @@
 #import "SVProgressHUD.h"
 #import "LZColorCell.h"
 
+#define indicatorViewW 16
+
 @interface LZPickerColorController ()<UIScrollViewDelegate>
 @property (weak, nonatomic) IBOutlet UIScrollView *containerScrollView;
 @property (nonatomic, strong) UIImageView *imageView;
@@ -25,6 +27,8 @@
 @property (nonatomic, strong) UIColor *selectedColor;
 
 @property (nonatomic, strong) LZColorCell *colorCellView;
+
+@property (nonatomic, strong) UIView *indicatorView;
 
 @end
 
@@ -92,20 +96,7 @@
 }
 
 
-#pragma mark - imageview tap gesture action
 
-- (void)tapAction:(UIGestureRecognizer *)tapGesture{
-    
-    CGPoint postion = [tapGesture locationInView:self.imageView];
-    //NSLog(@"touch : %@", NSStringFromCGPoint(postion));
-    NSString *hexString = [self.imageView hexColorStringInPosition:postion];
-    UIColor *color = [hexString colorFromHextString];
-    
-    self.colorCellView.currentColor = color;
-    
-    self.selectedColor = color;
-   
-}
 
 #pragma mark - slider change
 - (IBAction)scaleValueChanged:(UISlider *)sender {
@@ -150,5 +141,60 @@
     return _colorCellView;
 }
 
+- (UIView *)indicatorView{
+    if (!_indicatorView) {
+        _indicatorView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, indicatorViewW, indicatorViewW)];
+        _indicatorView.backgroundColor = [[UIColor lightGrayColor] colorWithAlphaComponent:0.9];
+        [self.containerScrollView addSubview:_indicatorView];
+        _indicatorView.hidden = YES;
+        _indicatorView.layer.cornerRadius = indicatorViewW / 2;
+        
+        UIPanGestureRecognizer *panGesture = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panAction:)];
+        
+        [_indicatorView addGestureRecognizer:panGesture];
+        
+        
+    }
+    return _indicatorView;
+}
+
+
+#pragma mark - imageview tap gesture action
+
+- (void)tapAction:(UIGestureRecognizer *)tapGesture{
+    
+    CGPoint position = [tapGesture locationInView:self.imageView];
+    
+    
+    [self configColorInfoInPosition:position];
+    
+}
+
+#pragma mark - indicatorView pan action
+
+- (void)panAction:(UIPanGestureRecognizer *)gesture{
+    
+    
+    CGPoint position = [gesture locationInView:self.imageView];
+    CGPoint realPosition ;
+    CGFloat cornerRadius = 0;
+    realPosition.x = MIN(CGRectGetMaxX(self.imageView.frame) - cornerRadius,  MAX(CGRectGetMinX(self.imageView.frame) + cornerRadius, position.x));
+    realPosition.y = MIN(CGRectGetMaxY(self.imageView.frame) - cornerRadius, MAX(CGRectGetMinY(self.imageView.frame) + cornerRadius, position.y));
+    
+    [self configColorInfoInPosition:realPosition];
+    
+    
+}
+
+- (void)configColorInfoInPosition:(CGPoint)position{
+    self.indicatorView.center = position;
+    self.indicatorView.hidden = NO;
+    NSString *hexString = [self.imageView hexColorStringInPosition:position];
+    UIColor *color = [hexString colorFromHextString];
+    
+    self.colorCellView.currentColor = color;
+    
+    self.selectedColor = color;
+}
 
 @end
