@@ -16,6 +16,13 @@
 		CB197BFF1CAE32D60015B394 /* libGPUImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CB197B511CAE32430015B394 /* libGPUImage.a */; };
 		CB197C021CAE331F0015B394 /* LZRealTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB197C011CAE331F0015B394 /* LZRealTimeViewController.m */; };
 		CB197C041CAE36200015B394 /* LZRealTimeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB197C031CAE36200015B394 /* LZRealTimeViewController.xib */; };
+		CB2B3EEF1CAE6C4400FE1501 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = CB2B3EE41CAE6C4400FE1501 /* FMDatabase.m */; };
+		CB2B3EF01CAE6C4400FE1501 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CB2B3EE61CAE6C4400FE1501 /* FMDatabaseAdditions.m */; };
+		CB2B3EF11CAE6C4400FE1501 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = CB2B3EE81CAE6C4400FE1501 /* FMDatabasePool.m */; };
+		CB2B3EF21CAE6C4400FE1501 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = CB2B3EEA1CAE6C4400FE1501 /* FMDatabaseQueue.m */; };
+		CB2B3EF31CAE6C4400FE1501 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = CB2B3EED1CAE6C4400FE1501 /* FMResultSet.m */; };
+		CB2B3EF41CAE6C4400FE1501 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CB2B3EEE1CAE6C4400FE1501 /* Info.plist */; };
+		CB2B3EF61CAE6C7400FE1501 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CB2B3EF51CAE6C7400FE1501 /* libsqlite3.tbd */; };
 		CBEA0AE91CACE1320008141F /* UIView+LZFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = CBEA0AE81CACE1320008141F /* UIView+LZFrame.m */; };
 		CBEA0AF31CACE3360008141F /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = CBEA0AEC1CACE3360008141F /* SVIndefiniteAnimatedView.m */; };
 		CBEA0AF41CACE3360008141F /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CBEA0AEE1CACE3360008141F /* SVProgressHUD.bundle */; };
@@ -237,6 +244,19 @@
 		CB197C001CAE331F0015B394 /* LZRealTimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZRealTimeViewController.h; sourceTree = "<group>"; };
 		CB197C011CAE331F0015B394 /* LZRealTimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZRealTimeViewController.m; sourceTree = "<group>"; };
 		CB197C031CAE36200015B394 /* LZRealTimeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LZRealTimeViewController.xib; sourceTree = "<group>"; };
+		CB2B3EE31CAE6C4400FE1501 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		CB2B3EE41CAE6C4400FE1501 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		CB2B3EE51CAE6C4400FE1501 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		CB2B3EE61CAE6C4400FE1501 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		CB2B3EE71CAE6C4400FE1501 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		CB2B3EE81CAE6C4400FE1501 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		CB2B3EE91CAE6C4400FE1501 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		CB2B3EEA1CAE6C4400FE1501 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		CB2B3EEB1CAE6C4400FE1501 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		CB2B3EEC1CAE6C4400FE1501 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		CB2B3EED1CAE6C4400FE1501 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		CB2B3EEE1CAE6C4400FE1501 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB2B3EF51CAE6C7400FE1501 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		CBEA0AE71CACE1320008141F /* UIView+LZFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LZFrame.h"; sourceTree = "<group>"; };
 		CBEA0AE81CACE1320008141F /* UIView+LZFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LZFrame.m"; sourceTree = "<group>"; };
 		CBEA0AEB1CACE3360008141F /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
@@ -272,6 +292,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB2B3EF61CAE6C7400FE1501 /* libsqlite3.tbd in Frameworks */,
 				CB197BFF1CAE32D60015B394 /* libGPUImage.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -471,6 +492,25 @@
 			path = GPUImage;
 			sourceTree = "<group>";
 		};
+		CB2B3EE21CAE6C4400FE1501 /* fmdb */ = {
+			isa = PBXGroup;
+			children = (
+				CB2B3EE31CAE6C4400FE1501 /* FMDatabase.h */,
+				CB2B3EE41CAE6C4400FE1501 /* FMDatabase.m */,
+				CB2B3EE51CAE6C4400FE1501 /* FMDatabaseAdditions.h */,
+				CB2B3EE61CAE6C4400FE1501 /* FMDatabaseAdditions.m */,
+				CB2B3EE71CAE6C4400FE1501 /* FMDatabasePool.h */,
+				CB2B3EE81CAE6C4400FE1501 /* FMDatabasePool.m */,
+				CB2B3EE91CAE6C4400FE1501 /* FMDatabaseQueue.h */,
+				CB2B3EEA1CAE6C4400FE1501 /* FMDatabaseQueue.m */,
+				CB2B3EEB1CAE6C4400FE1501 /* FMDB.h */,
+				CB2B3EEC1CAE6C4400FE1501 /* FMResultSet.h */,
+				CB2B3EED1CAE6C4400FE1501 /* FMResultSet.m */,
+				CB2B3EEE1CAE6C4400FE1501 /* Info.plist */,
+			);
+			path = fmdb;
+			sourceTree = "<group>";
+		};
 		CBEA0AEA1CACE3360008141F /* SVProgressHUD */ = {
 			isa = PBXGroup;
 			children = (
@@ -489,6 +529,7 @@
 		CBF4851C1CACBD950029B466 = {
 			isa = PBXGroup;
 			children = (
+				CB2B3EF51CAE6C7400FE1501 /* libsqlite3.tbd */,
 				CBF485271CACBD950029B466 /* LZColorDetector */,
 				CBF485411CACBD950029B466 /* LZColorDetectorTests */,
 				CBF4854C1CACBD950029B466 /* LZColorDetectorUITests */,
@@ -598,6 +639,7 @@
 		CBF485651CACBE990029B466 /* Publics */ = {
 			isa = PBXGroup;
 			children = (
+				CB2B3EE21CAE6C4400FE1501 /* fmdb */,
 				CB197B531CAE32840015B394 /* GPUImage */,
 				CB197B511CAE32430015B394 /* libGPUImage.a */,
 				CBEA0AEA1CACE3360008141F /* SVProgressHUD */,
@@ -785,6 +827,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB2B3EF41CAE6C4400FE1501 /* Info.plist in Resources */,
 				CBF485791CACBE990029B466 /* Info.plist in Resources */,
 				CB197C041CAE36200015B394 /* LZRealTimeViewController.xib in Resources */,
 				CBF4857C1CACC92C0029B466 /* Main.storyboard in Resources */,
@@ -819,9 +862,12 @@
 				CBEA0AF61CACE3360008141F /* SVRadialGradientLayer.m in Sources */,
 				CB1979571CADE2DE0015B394 /* LZColorStorage.m in Sources */,
 				CB0908691CADC47400835211 /* UIImageView+LZColor.m in Sources */,
+				CB2B3EEF1CAE6C4400FE1501 /* FMDatabase.m in Sources */,
 				CBEA0AF31CACE3360008141F /* SVIndefiniteAnimatedView.m in Sources */,
+				CB2B3EF31CAE6C4400FE1501 /* FMResultSet.m in Sources */,
 				CBEA0AE91CACE1320008141F /* UIView+LZFrame.m in Sources */,
 				CBEA0AF91CACEF4B0008141F /* LZPickerColorController.m in Sources */,
+				CB2B3EF01CAE6C4400FE1501 /* FMDatabaseAdditions.m in Sources */,
 				CB19795B1CADE83C0015B394 /* LZColorCell.m in Sources */,
 				CBF485751CACBE990029B466 /* ViewController.m in Sources */,
 				CBF4857A1CACBE990029B466 /* main.m in Sources */,
@@ -830,6 +876,8 @@
 				CBF485741CACBE990029B466 /* AppDelegate.m in Sources */,
 				CBEA0AF51CACE3360008141F /* SVProgressHUD.m in Sources */,
 				CB197C021CAE331F0015B394 /* LZRealTimeViewController.m in Sources */,
+				CB2B3EF11CAE6C4400FE1501 /* FMDatabasePool.m in Sources */,
+				CB2B3EF21CAE6C4400FE1501 /* FMDatabaseQueue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "FMDB.h"
 @interface LZColorStorage : NSObject
 
 + (instancetype)sharedColorStorage;

@@ -16,6 +16,7 @@
     color.redComponent = red;
     color.greenComponent  = green;
     color.blueComponent = blue;
+    color.alphaValue = alpha;
     color.hexString = [NSString stringWithFormat:@"%02lX%02lX%02lX%02lX", (long)red, (long)green, (long)blue, (long)alpha];
     return color;
 };
@@ -48,6 +49,15 @@
 
 - (void)setBlueComponent:(NSInteger)blueComponent{
     objc_setAssociatedObject(self, @selector(blueComponent), @(blueComponent), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
+- (NSInteger)alphaValue{
+    NSNumber *alpha = objc_getAssociatedObject(self, @selector(alphaValue));
+    return [alpha integerValue];
+}
+
+- (void)setAlphaValue:(NSInteger)alphaValue{
+    objc_setAssociatedObject(self, @selector(alphaValue), @(alphaValue), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
 - (void)setHexString:(NSString *)hexString{
