@@ -12,6 +12,7 @@
 #import "LZPickerColorController.h"
 #import "LZColorCell.h"
 #import "LZColorStorage.h"
+#import "LZRealTimeViewController.h"
 
 
 @interface ViewController ()<UINavigationControllerDelegate,UIImagePickerControllerDelegate, UITableViewDelegate, UITableViewDataSource>
@@ -99,7 +100,10 @@
 
 
 - (IBAction)realButtonClick:(UIButton *)sender {
-    
+    LZRealTimeViewController *realtimeVC = [[LZRealTimeViewController alloc] init];
+    [self.navigationController presentViewController:realtimeVC animated:YES completion:^{
+        
+    }];
 }
 
 
