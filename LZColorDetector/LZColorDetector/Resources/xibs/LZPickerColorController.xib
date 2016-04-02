@@ -15,27 +15,29 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <rect key="frame" x="0.0" y="64" width="600" height="536"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gda-9y-iOh">
-                    <rect key="frame" x="0.0" y="102" width="600" height="395"/>
+                    <rect key="frame" x="0.0" y="46" width="600" height="387"/>
                 </scrollView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XYx-EU-EQG">
-                    <rect key="frame" x="0.0" y="500" width="600" height="100"/>
-                    <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                    <rect key="frame" x="0.0" y="436" width="600" height="100"/>
+                    <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.93725490196078431" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="100" id="plT-cW-2hh"/>
                     </constraints>
                 </view>
                 <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="zVr-WP-dRE">
-                    <rect key="frame" x="28" y="64" width="544" height="31"/>
+                    <rect key="frame" x="28" y="8" width="544" height="31"/>
+                    <color key="minimumTrackTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="maximumTrackTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     <connections>
                         <action selector="scaleValueChanged:" destination="-1" eventType="valueChanged" id="aUu-5C-b5z"/>
                     </connections>
                 </slider>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.93725490196078431" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstItem="XYx-EU-EQG" firstAttribute="top" secondItem="Gda-9y-iOh" secondAttribute="bottom" constant="3" id="56j-Ee-dX6"/>
                 <constraint firstAttribute="bottom" secondItem="XYx-EU-EQG" secondAttribute="bottom" id="6CM-At-xeg"/>
@@ -45,9 +47,10 @@
                 <constraint firstItem="Gda-9y-iOh" firstAttribute="top" secondItem="zVr-WP-dRE" secondAttribute="bottom" constant="8" id="dAC-Wt-MYS"/>
                 <constraint firstItem="zVr-WP-dRE" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="ddS-Ho-edw"/>
                 <constraint firstAttribute="trailing" secondItem="Gda-9y-iOh" secondAttribute="trailing" id="i1Y-s9-YuH"/>
-                <constraint firstItem="zVr-WP-dRE" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="64" id="loY-3O-nZz"/>
+                <constraint firstItem="zVr-WP-dRE" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="loY-3O-nZz"/>
                 <constraint firstAttribute="trailing" secondItem="XYx-EU-EQG" secondAttribute="trailing" id="pdN-Io-hxO"/>
             </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
         </view>
     </objects>
 </document>

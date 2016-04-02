@@ -18,28 +18,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="INv-u9-EA3">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="INv-u9-EA3">
                                 <rect key="frame" x="300" y="72" width="100" height="30"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="EHQ-nB-hF2"/>
                                     <constraint firstAttribute="height" constant="30" id="Qwc-Zp-loG"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <state key="normal" title="History">
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="History" backgroundImage="HistoryButtonNormal">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <state key="selected" backgroundImage="HistoryButtonClick"/>
+                                <state key="highlighted" backgroundImage="HistoryButtonClick"/>
                                 <connections>
                                     <action selector="historyButtonClick:" destination="s8u-4a-AwQ" eventType="touchUpInside" id="lxn-Ev-4Y0"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GrY-u1-Jfv">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GrY-u1-Jfv">
                                 <rect key="frame" x="200" y="72" width="100" height="30"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <state key="normal" title="New">
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="New" backgroundImage="NewButtonNormal">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <state key="selected" backgroundImage="NewButtonClick"/>
+                                <state key="highlighted" backgroundImage="NewButtonClick"/>
                                 <connections>
                                     <action selector="nButtonClick:" destination="s8u-4a-AwQ" eventType="touchUpInside" id="k2t-6R-hhH"/>
                                 </connections>
@@ -47,44 +51,55 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mIx-3m-bww" userLabel="NewContainer">
                                 <rect key="frame" x="0.0" y="110" width="600" height="490"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rya-7g-vCN">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rya-7g-vCN">
                                         <rect key="frame" x="225" y="280" width="150" height="50"/>
-                                        <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="150" id="GYU-Bg-0Re"/>
                                             <constraint firstAttribute="height" constant="50" id="w8n-Gw-puO"/>
                                         </constraints>
-                                        <state key="normal" title="拍照读取">
+                                        <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="15" maxY="0.0"/>
+                                        <state key="normal" title="拍照读取" image="TakePhoto" backgroundImage="TakePhotoBackground">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
                                             <action selector="photoButtonClick:" destination="s8u-4a-AwQ" eventType="touchUpInside" id="JyQ-Sa-vbc"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9NO-XT-fhw">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9NO-XT-fhw">
                                         <rect key="frame" x="225" y="338" width="150" height="50"/>
-                                        <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" title="实时检测">
+                                        <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <inset key="imageEdgeInsets" minX="10" minY="0.0" maxX="15" maxY="0.0"/>
+                                        <state key="normal" title="实时检测" image="RealTime" backgroundImage="RealTimeBackground">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
                                             <action selector="realButtonClick:" destination="s8u-4a-AwQ" eventType="touchUpInside" id="iGP-jZ-a92"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vMO-Qe-t4p">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vMO-Qe-t4p">
                                         <rect key="frame" x="225" y="222" width="150" height="50"/>
-                                        <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" title="本地相册">
+                                        <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="15" maxY="0.0"/>
+                                        <state key="normal" title="本地相册" image="LocalAlbum" backgroundImage="LocalAlbumBackground">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
                                             <action selector="albumButtonClick:" destination="s8u-4a-AwQ" eventType="touchUpInside" id="Vbo-0b-INh"/>
                                         </connections>
                                     </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="JWx-5j-I97">
+                                        <rect key="frame" x="260" y="102" width="80" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="G8D-qf-LqB"/>
+                                            <constraint firstAttribute="width" constant="80" id="hk9-CI-HXb"/>
+                                        </constraints>
+                                    </imageView>
                                 </subviews>
-                                <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.93725490196078431" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="9NO-XT-fhw" firstAttribute="centerX" secondItem="vMO-Qe-t4p" secondAttribute="centerX" id="3lD-Q7-d7U"/>
+                                    <constraint firstItem="JWx-5j-I97" firstAttribute="centerX" secondItem="mIx-3m-bww" secondAttribute="centerX" id="5xI-XK-Kz3"/>
                                     <constraint firstItem="Rya-7g-vCN" firstAttribute="width" secondItem="vMO-Qe-t4p" secondAttribute="width" id="Bqs-Fh-QfK"/>
                                     <constraint firstItem="Rya-7g-vCN" firstAttribute="top" secondItem="vMO-Qe-t4p" secondAttribute="bottom" constant="8" id="C3A-ZQ-hGg"/>
                                     <constraint firstItem="9NO-XT-fhw" firstAttribute="height" secondItem="vMO-Qe-t4p" secondAttribute="height" id="CyL-Y7-wiY"/>
@@ -92,6 +107,7 @@
                                     <constraint firstItem="Rya-7g-vCN" firstAttribute="centerX" secondItem="mIx-3m-bww" secondAttribute="centerX" id="XU4-7d-PmU"/>
                                     <constraint firstItem="9NO-XT-fhw" firstAttribute="width" secondItem="vMO-Qe-t4p" secondAttribute="width" id="YDd-RD-G5b"/>
                                     <constraint firstItem="Rya-7g-vCN" firstAttribute="centerY" secondItem="mIx-3m-bww" secondAttribute="centerY" constant="60" id="b7M-IE-dI2"/>
+                                    <constraint firstItem="vMO-Qe-t4p" firstAttribute="top" secondItem="JWx-5j-I97" secondAttribute="bottom" constant="40" id="dfD-GE-gA1"/>
                                     <constraint firstItem="9NO-XT-fhw" firstAttribute="top" secondItem="Rya-7g-vCN" secondAttribute="bottom" constant="8" id="vWr-cu-OHj"/>
                                     <constraint firstItem="Rya-7g-vCN" firstAttribute="centerX" secondItem="vMO-Qe-t4p" secondAttribute="centerX" id="w4S-Ij-FYL"/>
                                 </constraints>
@@ -113,7 +129,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.86274509803921573" green="0.86274509803921573" blue="0.86274509803921573" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.21568627450980393" green="0.21568627450980393" blue="0.21176470588235294" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="INv-u9-EA3" firstAttribute="top" secondItem="vcl-t9-vMB" secondAttribute="bottom" constant="8" id="3jl-Oj-1P8"/>
                             <constraint firstItem="GrY-u1-Jfv" firstAttribute="height" secondItem="INv-u9-EA3" secondAttribute="height" id="D1i-XB-8HF"/>
@@ -133,8 +149,10 @@
                     </view>
                     <navigationItem key="navigationItem" title="Color Detector" id="gJU-Si-ttK"/>
                     <connections>
+                        <outlet property="buttonNew" destination="GrY-u1-Jfv" id="R1D-PN-bEM"/>
                         <outlet property="colorHistoryTableView" destination="5r2-g8-ZRp" id="Yue-Lz-V5h"/>
                         <outlet property="containerLeading" destination="iAN-HC-9K8" id="ARP-vF-oHD"/>
+                        <outlet property="historyButton" destination="INv-u9-EA3" id="nJ6-IP-bHZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wZb-W5-M2U" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -144,7 +162,7 @@
         <!--Navigation Controller-->
         <scene sceneID="9Oa-LK-7fY">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FtX-6m-3bV" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FtX-6m-3bV" customClass="LZNavigationController" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="QIX-VH-IIn">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -160,4 +178,17 @@
             <point key="canvasLocation" x="334" y="398"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="HistoryButtonClick" width="100" height="30"/>
+        <image name="HistoryButtonNormal" width="100" height="30"/>
+        <image name="LocalAlbum" width="30" height="30"/>
+        <image name="LocalAlbumBackground" width="150" height="50"/>
+        <image name="NewButtonClick" width="100" height="30"/>
+        <image name="NewButtonNormal" width="100" height="30"/>
+        <image name="RealTime" width="30" height="30"/>
+        <image name="RealTimeBackground" width="150" height="50"/>
+        <image name="TakePhoto" width="30" height="30"/>
+        <image name="TakePhotoBackground" width="150" height="50"/>
+        <image name="logo" width="80" height="80"/>
+    </resources>
 </document>

@@ -7,9 +7,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LZRealTimeViewController">
             <connections>
+                <outlet property="backButton" destination="329-L3-nlp" id="U3P-oS-nef"/>
                 <outlet property="blueLabel" destination="le1-cQ-KbY" id="49e-VG-YAK"/>
                 <outlet property="greenLabel" destination="WqW-Go-bdp" id="8lk-QU-Zf0"/>
                 <outlet property="redLabel" destination="cwA-b9-AVz" id="ksX-WQ-9Je"/>
+                <outlet property="saveButton" destination="KSC-Is-5OV" id="Yqr-Kh-eal"/>
                 <outlet property="view" destination="iN0-l3-epB" id="JhC-Aq-lIR"/>
             </connections>
         </placeholder>
@@ -20,12 +22,12 @@
             <subviews>
                 <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="329-L3-nlp">
                     <rect key="frame" x="0.0" y="40" width="60" height="30"/>
-                    <color key="backgroundColor" red="0.87450980389999999" green="0.87450980389999999" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="30" id="CKc-hN-TH4"/>
                         <constraint firstAttribute="width" constant="60" id="ZjC-BV-608"/>
                     </constraints>
-                    <state key="normal" title="back">
+                    <state key="normal" backgroundImage="RealTimeBackButton">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
@@ -34,12 +36,11 @@
                 </button>
                 <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KSC-Is-5OV">
                     <rect key="frame" x="540" y="40" width="60" height="30"/>
-                    <color key="backgroundColor" red="0.87450980389999999" green="0.87450980389999999" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="30" id="nOU-b1-FqU"/>
                         <constraint firstAttribute="width" constant="60" id="yNw-8R-iNR"/>
                     </constraints>
-                    <state key="normal" title="save">
+                    <state key="normal" title="save" backgroundImage="RealTimeSaveButton">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
@@ -56,17 +57,32 @@
                                 <constraint firstAttribute="width" constant="30" id="Dqb-tg-TLz"/>
                                 <constraint firstAttribute="height" constant="30" id="UrV-CH-qdy"/>
                             </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="15"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K3m-mc-Lef" userLabel="greenView">
                             <rect key="frame" x="0.0" y="30" width="30" height="30"/>
                             <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="15"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="07H-gs-ZrU" userLabel="blueView">
                             <rect key="frame" x="0.0" y="60" width="30" height="30"/>
                             <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="15"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
                         </view>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="255" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cwA-b9-AVz" userLabel="redLabel">
-                            <rect key="frame" x="38" y="-1" width="54" height="30"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="255" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cwA-b9-AVz" userLabel="redLabel">
+                            <rect key="frame" x="38" y="0.0" width="54" height="30"/>
                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                             <nil key="highlightedColor"/>
@@ -113,7 +129,7 @@
                     </constraints>
                 </view>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="KSC-Is-5OV" firstAttribute="height" secondItem="329-L3-nlp" secondAttribute="height" id="2zB-zl-Jmd"/>
                 <constraint firstItem="cuP-Q6-ivC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="C4R-gc-FmK"/>
@@ -126,4 +142,8 @@
             </constraints>
         </view>
     </objects>
+    <resources>
+        <image name="RealTimeBackButton" width="60" height="30"/>
+        <image name="RealTimeSaveButton" width="60" height="30"/>
+    </resources>
 </document>

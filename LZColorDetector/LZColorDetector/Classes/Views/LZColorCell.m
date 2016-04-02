@@ -49,6 +49,7 @@
 
 - (void)config{
      self.selectionStyle = UITableViewCellSelectionStyleNone;
+    self.backgroundView  = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"CellBackGround"]];
 }
 
 - (void)setCurrentColor:(UIColor *)currentColor{

@@ -120,7 +120,7 @@ static LZColorStorage *colorStorage_;
                 return nil;
             }
             
-            NSString *insertSQL = @"INSERT INTO COLORHISTORY(red, green, blue, alpha) VALUES(255, 255, 255, 1);";
+            NSString *insertSQL = @"INSERT INTO COLORHISTORY(red, green, blue, alpha) VALUES(123, 66, 255, 255);";
             
             if (![_db executeUpdate:insertSQL]) {
                 [SVProgressHUD showErrorWithStatus:@"数据插入失败"];

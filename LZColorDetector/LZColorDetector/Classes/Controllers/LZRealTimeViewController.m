@@ -24,9 +24,17 @@
 @property (nonatomic, strong) GPUImageVideoCamera *videoCamera;
 @property (nonatomic, strong) GPUImageRawDataOutput *rawDataOutPut;
 
+@property (weak, nonatomic) IBOutlet UIButton *saveButton;
+
+@property (weak, nonatomic) IBOutlet UIButton *backButton;
+
 @end
 
 @implementation LZRealTimeViewController
+
+- (BOOL)prefersStatusBarHidden{
+    return YES;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -73,20 +81,10 @@
     
     [self.videoCamera addTarget:self.videoView];
     [self.videoCamera addTarget:self.rawDataOutPut];
-    // Add the view somewhere so it's visible
+    [self.videoCamera startCameraCapture];
     
-//    [videoCamera addTarget:customFilter];
-//    [customFilter addTarget:filteredVideoView];
-    
-//    [videoCamera startCameraCapture];
 }
 
-- (void)viewDidAppear:(BOOL)animated{
-    
-    [super viewDidAppear:animated];
-    
-    [self.videoCamera startCameraCapture];
-}
 
 #pragma mark - layout subview
 - (void)viewDidLayoutSubviews{
@@ -104,8 +102,15 @@
 }
 
 - (IBAction)saveAction:(UIButton *)sender {
+    self.view.userInteractionEnabled = NO;
+    self.saveButton.enabled = NO;
     [[LZColorStorage sharedColorStorage] addColor:self.selectedColor];
-    [SVProgressHUD showSuccessWithStatus:@"保存成功"];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [SVProgressHUD showSuccessWithStatus:@"保存成功"];
+        self.view.userInteractionEnabled = YES;
+        self.saveButton.enabled = YES;
+    });
+   
 }
 
 #pragma mark - setter
@@ -123,8 +128,10 @@
     if (!_indicatorView) {
         _indicatorView = [[UIView alloc] init];
         [self.view addSubview:_indicatorView];
-        _indicatorView.bounds = CGRectMake(0, 0, 20, 20);
-        _indicatorView.layer.cornerRadius =  10;
+        _indicatorView.bounds = CGRectMake(0, 0, 30, 30);
+        UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"RealTimeIndicatorImage"]];
+        [_indicatorView addSubview:imageView];
+        _indicatorView.layer.cornerRadius =  15;
     }
     return _indicatorView;
 }

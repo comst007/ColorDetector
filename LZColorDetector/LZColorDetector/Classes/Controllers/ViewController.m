@@ -12,6 +12,7 @@
 #import "LZPickerColorController.h"
 #import "LZColorCell.h"
 #import "LZColorStorage.h"
+#import "LZNavigationController.h"
 #import "LZRealTimeViewController.h"
 
 
@@ -20,16 +21,23 @@
 @property (nonatomic, strong) UIImagePickerController *imagePickerVC;
 @property (weak, nonatomic) IBOutlet UITableView *colorHistoryTableView;
 
+@property (weak, nonatomic) IBOutlet UIButton *historyButton;
+@property (weak, nonatomic) IBOutlet UIButton *buttonNew;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     // Do any additional setup after loading the view, typically from a nib.
     [self configColorHistoryTableView];
+    [self nButtonClick:self.buttonNew];
     
 }
+
+
+
 
 - (void)configColorHistoryTableView{
     self.colorHistoryTableView.delegate = self;
@@ -37,12 +45,16 @@
     [self.colorHistoryTableView registerNib:[UINib nibWithNibName:NSStringFromClass([LZColorCell class]) bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"LZColorCell"];
     self.colorHistoryTableView.rowHeight = 100;
     self.colorHistoryTableView.tableFooterView = [[UIView alloc] init];
+    self.colorHistoryTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    self.colorHistoryTableView.backgroundColor = [UIColor colorWithRed:216 / 255.0 green:216 / 255.0 blue:216 / 255.0 alpha:1];
 }
 
 
 #pragma mark - new or history
 - (IBAction)historyButtonClick:(UIButton *)sender {
     
+    sender.selected = YES;
+    self.buttonNew.selected = NO;
      self.containerLeading.constant = - self.view.width;
     
     [UIView animateWithDuration:0.25 animations:^{
@@ -57,6 +69,8 @@
 }
 - (IBAction)nButtonClick:(UIButton *)sender {
     
+    sender.selected = YES;
+    self.historyButton.selected = NO;
     self.containerLeading.constant = 0;
     
     [UIView animateWithDuration:0.25 animations:^{
@@ -101,9 +115,16 @@
 
 - (IBAction)realButtonClick:(UIButton *)sender {
     LZRealTimeViewController *realtimeVC = [[LZRealTimeViewController alloc] init];
-    [self.navigationController presentViewController:realtimeVC animated:YES completion:^{
+    [UIView animateWithDuration:0.25 animations:^{
+        self.view.alpha = 0;
         
+    } completion:^(BOOL finished) {
+        [self.navigationController presentViewController:realtimeVC animated:YES completion:^{
+            
+            self.view.alpha = 1;
+        }];
     }];
+    
 }
 
 
@@ -118,7 +139,7 @@
     UIImage *sourceImage = info[UIImagePickerControllerOriginalImage];
     LZPickerColorController *pickerVC = [[LZPickerColorController alloc] init];
     pickerVC.selectedImage = sourceImage;
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:pickerVC];
+    LZNavigationController *nav = [[LZNavigationController alloc] initWithRootViewController:pickerVC];
     
     [self.navigationController dismissViewControllerAnimated:YES completion:^{
         
@@ -164,4 +185,13 @@
     return cell;
 }
 
+- (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return UITableViewCellEditingStyleDelete;
+}
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    [[LZColorStorage sharedColorStorage] removeColorAtIndex:indexPath.row];
+    [self.colorHistoryTableView reloadData];
+}
 @end
